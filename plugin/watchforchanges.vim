@@ -166,6 +166,7 @@ function! WatchForChanges(bufname, ...)
     let msg = msg . 'Already watching ' . bufspec . ' for external updates'
   end
 
-  echo msg
+  " I've commented out the message prompt as I don't personally like it.
+  "echo msg
   let @"=reg_saved
 endfunction
